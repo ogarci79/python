@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import sys, time
+import sys, time, argparse
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy import linalg 
@@ -62,9 +62,22 @@ class PatMatch :
 
 
 def main():
+    parser = argparse.ArgumentParser(description='Match a pattern')
+    parser.add_argument('-s','--signal',help='Signal to analyze',required=True)
+    parser.add_argument('-f','--file',help='Signal File to analize',required=False)
+    parser.add_argument('-p','--pattern',help='Pattern to find',required=False)
+    args=vars(parser.parse_args())
+
+    text=args['signal']
+    if args['file'] is not None :
+        text=text + args['file']
+
+    pattern=args['pattern']
+    pattern=pattern.split()
     pm=PatMatch()
-    text=sys.argv[1]
-    for pat in sys.argv[2:] : pm.addPattern(pat)
+
+    for pat in pattern : pm.addPattern(pat)
+    print pm
 
     for ch in text :
         pm.seeChar(ch)
