@@ -27,8 +27,8 @@ class PatMatch :
                 # partial match has pattern pointer and # chars matched
                 self.working[self.worktop]=(p, pos, 0, "partial")
                 self.worktop += 1
-                print("self.working: " , self.working)
-                print("self.worktop: " , self.worktop)
+                #print("self.working: " , self.working)
+                #print("self.worktop: " , self.worktop)
                 #time.sleep(15)
 
         wp=wkeep = 0            # work-pointer, work-keepers
@@ -45,7 +45,7 @@ class PatMatch :
                     self.working[wkeep] = (wpat,wpos,wcp,"complete")
                     wkeep += 1
                 else :
-                    # Still more to match.  tuck partila match in 
+                    # Still more to match.  Tuck partial match in 
                     self.working[wkeep]=(wpat,wpos,wcp,"parital ")
                     wkeep += 1 # Adjust new worktop, keeping partial 
             else : pass     # don't advance wkeep (drop failed partial)
@@ -53,38 +53,51 @@ class PatMatch :
         self.worktop = wkeep    # set worktop to matches kept
 
     def dump (self) :
+        #print "Patterns: %s" % " ".join(self.patterns)
+        #print "Chars seen: ", self.chars
+        for wp in range (self.worktop) :
+            wpat,wpos,wcp,wsts = self.working[wp]
+            #print "Found %s %s={%s-%s}" % (wsts,wpat,wpos,wpos+wcp-1)
+
+    def dump_end (self) :
         print "Patterns: %s" % " ".join(self.patterns)
-        print "Chars seen: ", self.chars
+        #print "Chars seen: ", self.chars
         for wp in range (self.worktop) :
             wpat,wpos,wcp,wsts = self.working[wp]
             print "Found %s %s={%s-%s}" % (wsts,wpat,wpos,wpos+wcp-1)
+                
+
 
 
 
 def main():
     parser = argparse.ArgumentParser(description='Match a pattern')
-    parser.add_argument('-s','--signal',help='Signal to analyze',required=True)
+    parser.add_argument('-s','--signal',help='Signal to analyze',required=False)
     parser.add_argument('-f','--file',help='Signal File to analize',required=False)
-    parser.add_argument('-p','--pattern',help='Pattern to find',required=False)
+    parser.add_argument('-p','--pattern',help='Pattern to find',required=True)
     args=vars(parser.parse_args())
 
     text=args['signal']
+    if text is None :
+        text=""
     if args['file'] is not None :
-        text=text + args['file']
+        with open(args['file']) as file :
+            text=text+file.read()
+        file.close()
 
     pattern=args['pattern']
     pattern=pattern.split()
     pm=PatMatch()
 
     for pat in pattern : pm.addPattern(pat)
-    print pm
 
     for ch in text :
         pm.seeChar(ch)
-        sys.stdout.write('\033[1;1H\033[J\n') # clear screen
+        #sys.stdout.write('\033[1;1H\033[J\n') # clear screen
         pm.dump()                             # produce animation frame
-        time.sleep(.5)
+        #time.sleep(.5)
     print "Done", len(pm.matches),"matches:"
+    pm.dump_end()
 
 if __name__ == "__main__":
     main()
