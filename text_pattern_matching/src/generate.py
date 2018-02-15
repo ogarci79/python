@@ -1,13 +1,19 @@
 #!/usr/bin/env python
 
-import sys, time
+import sys, time, argparse
 import random
 import string
 
 def main():
-    numChars=sys.argv[1]
+    parser = argparse.ArgumentParser(description='Match a pattern')
+    parser.add_argument('-n','--numChars',default=1000,help='Number of chars to create',required=False)
+    parser.add_argument('-o','--outFile',default='output.txt',help='Name of output file',required=False)
+    args=vars(parser.parse_args())
 
-    file=open("input.txt","wp")
+    numChars=args['numChars']
+    outFile=args['outFile']
+
+    file=open(outFile,"wp")
     for ch in range(int(numChars)) :
         file.write(random.choice(string.ascii_letters))
     file.write("\n")
