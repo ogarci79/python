@@ -52,17 +52,20 @@ def solveIntandPrinciple(p,r,m,f,c):
 
 def amortization(p,r,m,f,c):
     file=open('amortization.txt',"wp")
-        #file.write(random.choice(string.ascii_letters))
-        #file.write("\n")
-        #file.close() 
-    i=m
-    while c > 0:
-        print "{0:1.0f}:".format(i)
-        file.write("{0:1.0f}:".format(i))
-        c=c-solveIntandPrinciple(p,r,m,f,c)
-        print "Balace: ${0:1.2f}".format(c)
-        i=i-1
+    file.write("Month,Beginning Balance,Payment,Principle,Interest,End Balance\n")
+    i=1
+    while c > p:
+        m=m-1
+        interest=I(r,m,c)
+        principle=p-interest
+        file.write("{0:1.0f},${1:1.2f},${2:1.2f},${3:1.2f},${4:1.2f},${5:1.2f}\n".format(i,c,p,principle,interest,c-principle))
+        c=c-principle
+        i=i+1
+    #if c > 0
+        #file.write("{0:1.0f},${1:1.2f},${2:1.2f},${3:1.2f},${4:1.2f}\n".format(i,c,principle,interest,c-principle))
+        
     file.close() 
+
 
     
 
