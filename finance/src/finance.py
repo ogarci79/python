@@ -22,6 +22,9 @@ def J(r,m,c):
 def K(r,m):
     return (H(r,m) - 1) / r
 
+def T(r,m,c):
+    return c*H(r,m)
+
 def solvePayment(r,m,c,f):
     print 'Payment: ${0:1.2f}'.format((f-I(r,m,c)-J(r,m,c))/K(r,m))
 
@@ -38,33 +41,30 @@ def func2(x,p,m,f,c):
     return c*np.power(x+1,m) + p*(np.power(x+1,m)-1)/x - f
 
 def solveMonths(p,r,f,c):
-    print 'Months: {0:1.0f}'.format(optimize.newton(func1,10,fprime=None,args=(p,r,f,c)))
+    print 'Months: {0:1.2f}'.format(optimize.newton(func1,10,fprime=None,args=(p,r,f,c)))
 
 def solveRate(p,m,f,c):
     print 'Rate: {0:1.4f}'.format(12*optimize.newton(func2,0.01,fprime=None,args=(p,m,f,c)))
 
-def solveIntandPrinciple(p,r,m,f,c):
-    i=I(r,m,c)
-    pp=p-I(r,m,c)
-    print 'Interest: ${0:1.2f}'.format(i)
-    print 'Principle: ${0:1.2f}'.format(pp)
-    return pp
-
-def amortization(p,r,m,f,c):
+def amortization(p,r,f,c):
     file=open('amortization.txt',"wp")
     file.write("Month,Beginning Balance,Payment,Principle,Interest,End Balance\n")
-    i=1
-    while c > p:
-        m=m-1
-        interest=I(r,m,c)
-        principle=p-interest
-        file.write("{0:1.0f},${1:1.2f},${2:1.2f},${3:1.2f},${4:1.2f},${5:1.2f}\n".format(i,c,p,principle,interest,c-principle))
-        c=c-principle
-        i=i+1
-    #if c > 0
-        #file.write("{0:1.0f},${1:1.2f},${2:1.2f},${3:1.2f},${4:1.2f}\n".format(i,c,principle,interest,c-principle))
-        
+
+    n=1
+    x=c
+    x_last=c
+    eps=np.fabs(x-f)
+    while eps > np.fabs(p/2):
+        interest=x_last*r
+        principle=p+interest
+        x=x_last + interest + p
+        file.write("{0:1.0f},${1:1.2f},${2:1.2f},${3:1.2f},${4:1.2f},${5:1.2f}\n".format(n,x_last,p,principle,interest,x))
+        x_last=x
+        n=n+1
+        eps=np.fabs(x-f)
+
     file.close() 
+
 
 
     
@@ -90,8 +90,7 @@ def main():
     f=args['futureValue']
 
     if (len(sys.argv) < 9): 
-        print len(sys.argv)
-        print "Insufficient Number of Arguments. Need four of (p,r,m,e,c,f)"
+        print "Insufficient Number of Arguments. Need four of (p-payment,r-rate,m-months,e-not_used,c-currentValue,f-futureValue)"
         exit(-1)
 
     if p is None:
@@ -106,18 +105,16 @@ def main():
         solveCurrent(p,r,m,f)
         exit(-1)
 
-    if m is None:
-        solveMonths(p,r,f,c)
-        exit(-1)
-
     if r is None:
         solveRate(p,m,f,c)
         exit(-1)
 
-    #SolveIntandPrinciple(p,r,m,e,f,c)
-    #exit(-1)
+    amortization(p,r,f,c)
 
-    amortization(p,r,m,f,c)
+    if m is None:
+        solveMonths(p,r,f,c)
+        exit(-1)
+
 
 
 if __name__ == "__main__":
