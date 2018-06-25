@@ -15,6 +15,21 @@ import string
 
 WORDLIST_FILENAME = "words.txt"
 
+def secret_word_does_not_contain(secret_word,guess) :
+
+    for i in secret_word :
+        if i == guess :
+            return False
+
+    return True
+
+def char_available(available, guess) :
+
+    for i in available :
+        if i == guess :
+            return True
+
+    return False
 
 def load_words():
     """
@@ -136,30 +151,40 @@ def hangman(secret_word):
     
     Follows the other limitations detailed in the problem write-up.
     '''
-    # FILL IN YOUR CODE HERE AND DELETE "pass"
     print("Welcome to the game Hangman!")
     print("I am thinking of a word that is " + str(len(secret_word)) + " letters long.")
-    s=[]
-    for i in secret_word :
-        s.append("_ ")
-    print(''.join(s))
-    print(secret_word)
+    print("--------------------------------------------")
     num_guesses = 6
     letters_guessed=[]
     while num_guesses > 0 :
         print("You have " + str(num_guesses) + " guesses left.")
-        print("Available letters: " + get_available_letters(letters_guessed))
-        letters_guessed.append(raw_input("Please guess a letter: "))
+        available = get_available_letters(letters_guessed)
+        print("Available letters: " + available)
+        guess = raw_input("Please guess a letter: ")
+
+        if char_available(available, guess) :
+            letters_guessed.append(guess)
+            if secret_word_does_not_contain(secret_word,guess) :
+                num_guesses-=1
+        else :
+            print("ToDo: Warning Decrement")
+
         print(get_guessed_word(secret_word, letters_guessed))
-        #print(is_word_guessed(secret_word, letters_guessed))
+
+        if is_word_guessed(secret_word, letters_guessed) :
+            print("Winner")
+            exit(1)
+
 
         #print(letters_guessed)
-        num_guesses-=1
         print("--------------------------------------------")
 
     #letters_guessed=['e','i','k','p','r','s']
     #is_word_guessed(secret_word, letters_guessed)
     #print(get_guessed_word(secret_word, letters_guessed))
+    print("Loser: " + str(secret_word))
+
+    
 
 
 
@@ -243,14 +268,9 @@ if __name__ == "__main__":
     # To test part 2, comment out the pass line above and
     # uncomment the following two lines.
     
-    #secret_word = choose_word(wordlist)
-    secret_word="lines"
+    secret_word = choose_word(wordlist)
     hangman(secret_word)
 
-    #letters_guessed=['e','i','k','p','r','s']
-    #print(get_available_letters(letters_guessed))
-    #is_word_guessed(secret_word, letters_guessed)
-    #print(get_guessed_word(secret_word, letters_guessed))
 
 ###############
     
