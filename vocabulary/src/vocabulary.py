@@ -4,14 +4,19 @@ import matplotlib.pyplot as plt
 import numpy as np
 import argparse
 import csv
+import os
+import pandas as pd
 import random
 from scipy import linalg 
 
 def readFile(words):
-    with open('words.csv') as csvfile:
-        reader = csv.DictReader(csvfile)
-        for row in reader:
-            print row['Word']
+    words=pd.read_csv('words.csv')
+    #with open('words.csv') as csvfile:
+        #reader = csv.DictReader(csvfile)
+        #for row in reader:
+            #print row['Word']
+            #words.append(row)
+    return words
 
 
 def parse():
@@ -23,12 +28,28 @@ def parse():
     print args.accumulate(args.integers)
 
 def main():
+
     words=[]
-    #print("Main")
-    readFile(words)
-    #parse()
-    #n=random.randint(0,len(words[0])-1)
-    #print words['Word'][n]
+    words=readFile(words)
+    deck = list(range(len(words)))
+    random.shuffle(deck)
+
+    k=1
+    for n in deck:
+        os.system('clear')
+        print("\n\n\n\n\t\t\t\t\t\t\t\t" + words['Word'][n] + "\n\n\n\n\n\n\n\n\n\n\n")
+        s=raw_input("Press Enter to continue ...")
+        os.system('clear')
+        print("\n\n\n\n\t\t\t\t\t\t\t\t" + words['Word'][n] + "\n\n")
+        print("\t\t\t\t\t\t\t\tDefinition: " + words['Definition'][n])
+        print("\t\t\t\t\t\t\t\tSynonyms: " + words['Synonyms'][n])
+        print("\t\t\t\t\t\t\t\tSentence: " + words['Sentence'][n])
+        print("\t\t\t\t\t\t\t\tType: " + words['Type'][n])
+        print("\t\t\t\t\t\t\t\tPronunciation: " + words['Pronunciation'][n])
+        print("\t\t\t\t\t\t\t\tCount: " + str(k) + "\n\n\n\n")
+        k=k+1
+        s=raw_input("Press Enter to continue ...")
+        os.system('clear')
    
 
 if __name__ == "__main__":
