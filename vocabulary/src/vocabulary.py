@@ -11,11 +11,6 @@ from scipy import linalg
 
 def readFile(words):
     words=pd.read_csv('words.csv')
-    #with open('words.csv') as csvfile:
-        #reader = csv.DictReader(csvfile)
-        #for row in reader:
-            #print row['Word']
-            #words.append(row)
     return words
 
 
