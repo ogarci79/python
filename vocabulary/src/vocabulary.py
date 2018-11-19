@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 
-import matplotlib.pyplot as plt
-import numpy as np
 import argparse
 import csv
 import os
@@ -9,7 +7,6 @@ import datetime
 import pandas as pd
 import getpass
 import random
-from scipy import linalg 
 import smtplib
 from email.MIMEMultipart import MIMEMultipart
 from email.MIMEText import MIMEText
@@ -17,21 +14,26 @@ from email.MIMEText import MIMEText
 def compare(txt,e,toaddr,sub):
 
     count=0
-    if txt == open('words.txt','a+').read():
-        return count
-    else:
+    if txt != open('words.txt','a+').read():
         outfile=open('words.txt',"w")
         outfile.write(txt)
         outfile.close()
         while email(txt,toaddr,sub) and count < 2:
             count=count+1
+        return count
+
+    if e:
+        while email(txt,toaddr,sub) and count < 2:
+            count=count+1
+        return count
+
     
     return count
  
 def email(txt,toaddr,sub):
   
 
-    print "Enter Password for words.ogarci79@gmail.com"
+    print "Enter Password for words.ogarci79@gmail.com (ctr + c to cancel email)"
     password=getpass.getpass()
 
     try:
@@ -123,7 +125,7 @@ def main():
         os.system('clear')
         txt=txt + words['Word'][n] + " (" + words['Type'][n] + ") - " + words['Definition'][n] + "\n"
 
-    if f and w:
+    if e and f and w:
         sub = "Weekly Words: Week " + str(cede)
         if compare(txt,e,toaddr,sub) == 2:
             print "Failed to Send Email!"
