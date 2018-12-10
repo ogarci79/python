@@ -48,9 +48,10 @@ def printStuff(p,cede,toaddr,f,w,e,deck,words,c,numWords):
     elif e:
         sub = "Words: Random"
         count=0
-        while email(output,toaddr,sub) and count < 2:
+        max_count=5
+        while email(output,toaddr,sub) and count < max_count:
             count=count+1
-        if count==2:
+        if count==max_count:
             print "Failed to Send Email!"
 
     print("\n\n\n\n\t\t\t\t\t\t\t\tAll Done(" + str(p) + "/" + str(p) +")!\n\n\n\n")
@@ -90,6 +91,7 @@ def email(output,toaddr,sub):
         msg['To'] = ", ".join(toaddr)
         msg['Subject'] = sub
    
+        output=output + "\nhttps://www.merriam-webster.com/word-games/vocabulary-quiz"
         body = output
         msg.attach(MIMEText(body, 'plain'))
         #msg.attach(MIMEText(body, 'Rich Text'))
@@ -103,8 +105,8 @@ def email(output,toaddr,sub):
         server.quit()
     except:
         print "Invalid password"
-        if server:
-            server.quit()
+        #if server:
+            #server.quit()
         return True
 
     return False
@@ -157,7 +159,7 @@ def main():
     p = p if p < len(words) else len(words)
     deck = list(range(len(words)))
 
-    m=10
+    m=1
     for n in range(0,m):
         random.shuffle(deck)
 
