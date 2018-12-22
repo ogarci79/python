@@ -48,7 +48,7 @@ def printStuff(p,cede,toaddr,f,w,e,deck,words,c,numWords):
     elif e:
         sub = "Words: Random"
         count=0
-        max_count=5
+        max_count=10000
         while email(output,toaddr,sub) and count < max_count:
             count=count+1
         if count==max_count:
@@ -60,10 +60,10 @@ def printStuff(p,cede,toaddr,f,w,e,deck,words,c,numWords):
 
 def compare(output,e,toaddr,sub,c,numWords,p):
 
-    maxLoop=2
+    maxLoop=10000
     count=0
-    if not c and output != open('words.txt','a+').read() and p==numWords:
-        outfile=open('words.txt',"w")
+    if not c and output != open('/home/ogarci79/code/python/vocabulary/src/words.txt','a+').read() and p==numWords:
+        outfile=open('/home/ogarci79/code/python/vocabulary/src/words.txt',"w")
         outfile.write(output)
         outfile.close()
         while email(output,toaddr,sub) and count < maxLoop:
@@ -81,8 +81,9 @@ def compare(output,e,toaddr,sub,c,numWords,p):
  
 def email(output,toaddr,sub):
 
-    print "Enter Password for words.ogarci79@gmail.com ('Ctrl + c' to cancel email)"
-    password=getpass.getpass()
+    #print "Enter Password for words.ogarci79@gmail.com ('Ctrl + c' to cancel email)"
+    #password=getpass.getpass()
+    password=
 
     try:
         fromaddr = "words.ogarci79@gmail.com"
@@ -104,7 +105,7 @@ def email(output,toaddr,sub):
         server.sendmail(fromaddr, toaddr, text)
         server.quit()
     except:
-        print "Invalid password"
+        #print "Invalid password"
         #if server:
             #server.quit()
         return True
@@ -115,7 +116,7 @@ def email(output,toaddr,sub):
 
 def readFile(words):
 
-    words=pd.read_csv('words.csv')
+    words=pd.read_csv('/home/ogarci79/code/python/vocabulary/src/words.csv')
     return words
 
 
@@ -142,8 +143,8 @@ def main():
     words=[]
     words=readFile(words)
     [p,f,w,e,s,c]=parse()
-    numWords=5
-    cede=datetime.date.today().isocalendar()[1]
+    numWords=50
+    cede=int(datetime.date.today().strftime("%U"))+1
 
     if f:
         words=words[pd.notnull(words['Favor'])]
@@ -159,7 +160,7 @@ def main():
     p = p if p < len(words) else len(words)
     deck = list(range(len(words)))
 
-    m=1
+    m=3
     for n in range(0,m):
         random.shuffle(deck)
 
