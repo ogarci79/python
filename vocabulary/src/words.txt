@@ -1,10 +1,50 @@
-Propriety (noun) - the quality of behaving in a proper manner; obeying rules and customs
-Tangential (adj) - digressing; diverting
-Gestation (noun) - growth process from conception to birth
-Crescendo (noun) - steadily increasing in volume or force
-Contumacious (adj) - rebellious
-Diurnal (adj) - existing during the day; daily; of each day
-Oblique (adj) - indirect or evasive; misleading or devious
-Machination (noun) - plot or scheme especially to do harm; a secret political clique or faction
+Gullible (adj) - easily deceived
+Quotidian (adj) - occurring daily; commonplace; normal especially boring or mundane
+Crepuscular (adj) - of, relating to, or resembling twilight; occurring or active during twilight
+Neophyte (noun) - novice; beginner
+Abnegate (verb) - renounce or reject (something desired or valuable)
+Salable (adj) - fit or able to be sold
+Castigate (verb) - to punish or criticize harshly
+Catalyst (noun) - something that brings about a change in something else
+Gradation (noun) - process occurring by regular degrees or stages; variation in color
+Jettison (verb) - to discard; to get rid of as unnecessary or encumbering
+Taciturn (adj) - silent; not talkative
+Anthropomorphism (noun) - the attribution of human characteristics or behavior to a god, animal, or object
+Ingratiate (verb) - to gain favor with another by deliberate effort; to seek to please somebody so as to gain an advantage
+Supersede (verb) - take the place of (a person or thing previously in authority or use); supplant
+Convoluted (adj) - intricate and complicated
+Cadre (noun) - a small group of people specially trained for a particular purpose or profession
+Meticulous (adj) - extremely careful; fastidious; painstaking
+Viscous (adj) - thick and adhesive, like a slow-flowing fluid
+Magnate (noun) - powerful or influential person
+Rhetoric (noun) - language designed to have a persuasive or impressive effect on its audience, but often regarded as lacking in sincerity or meaningful content; effective writing or speaking
+Unconscionable  (adj) - unscrupulous; shockingly unfair or unjust
+Amenable (adj) - readily brought to yield, submit, or cooperate
+Stentorian (adj) - extremely loud
+Garner (verb) - to gather and store
+Mores (noun) - fixed customs or manners; moral attitudes; the essential or characteristic customs and conventions of a community
+Propitiate (verb) - win or regain the favor of (a god, spirit, or person) by doing something that pleases them
+Cacophony (noun) - harsh, jarring noise
+Impasse (noun) - blocked path; dilemma with no solution
+Deference (noun) - respect; courtesy
+Dither (verb) - to act confusedly or without clear pupose
+Fervid (adj) - intensely emotional; feverish; intensely enthusiastic or passionate, especially to an excessive degree
+Opaque (adj) - impossible to see through; preventing the passage of light
+Malinger (verb) - to evade responsibility by pretending to be ill
+Eulogy (noun) - speech in praise of someone
+Pithy (adj) - profound or substantial yet concise, succinct, and to the point
+Itinerant (adj) - wandering from place to place; unsettled
+Complicit (adj) - Involved with others in an illegal activity or wrongdoing
+Deface (verb) - to mar the appearance of; vandalize
+Euphemism (noun) - use of an inoffensive word or phrase in place of a more distasteful one
+Waver (verb) - to fluctuate between choices
+Prognosticate (verb) - foretell or prophesy (an event in the future)
+Verbose (adj) - wordy
+Deluge (verb) - inundate with a great quantity of something
+Vocation (noun) - a strong feeling of suitability for a particular career or occupation; a trade or profession
+Ethos (noun) - beliefs or character of a group
+Dissonance (noun) - lack of agreement; especially: inconsistency between the beliefs one holds or between one's actions and one's beliefs
+Connoisseur (noun) - a person with expert knowledge or discriminating tastes
 Neologism (noun) - new word or expression
-Pungent (adj) - sharp and irritating to the sense
+Occlude (verb) - to stop up; prevent the passage of
+Sedition (noun) - behavior that promotes rebellion or civil disorder against the state

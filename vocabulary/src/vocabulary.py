@@ -83,7 +83,7 @@ def email(output,toaddr,sub):
 
     #print "Enter Password for words.ogarci79@gmail.com ('Ctrl + c' to cancel email)"
     #password=getpass.getpass()
-    password=
+    password="a1e5c3b2"
 
     try:
         fromaddr = "words.ogarci79@gmail.com"
