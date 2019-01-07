@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import argparse
 import csv
@@ -8,8 +8,8 @@ import pandas as pd
 import getpass
 import random
 import smtplib
-from email.MIMEMultipart import MIMEMultipart
-from email.MIMEText import MIMEText
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 
 
@@ -20,7 +20,7 @@ def printStuff(p,cede,toaddr,f,w,e,deck,words,c,numWords):
     for n in deck[:p]:
         os.system('clear')
         print("\n\n\n\n\t\t\t\t\t\t\t\t" + words['Word'][n] + " (" + words['Type'][n] + ")\n\n\n\n\n\n\n\n\n\n\n")
-        s=raw_input("Press Enter to continue ...")
+        s=input("Press Enter to continue ...")
         os.system('clear')
         print("\n\n\n\n\t\t\t\t\t\t\t\t" + words['Word'][n] + " (" + words['Type'][n] + ")\n\n")
         print("\t\t\t\t\t\t\t\tDefinition: " + words['Definition'][n])
@@ -31,7 +31,7 @@ def printStuff(p,cede,toaddr,f,w,e,deck,words,c,numWords):
         print("\t\t\t\t\t\t\t\tCount: " + str(k) + " of " + str(p) + "\n\n\n\n")
         print("\n\n\n\t\t\t\t\t\t\t\t")
         k=k+1
-        s=raw_input("Press Enter to continue ...")
+        s=input("Press Enter to continue ...")
         os.system('clear')
         #output=output + words['Word'][n] + " (" + words['Type'][n] + ") - " + words['Definition'][n] + "<br>"
         if c:
@@ -44,7 +44,7 @@ def printStuff(p,cede,toaddr,f,w,e,deck,words,c,numWords):
     if f and w:
         sub = "Weekly Words: Week " + str(cede)
         if compare(output,e,toaddr,sub,c,numWords,p) == 2:
-            print "Failed to Send Email!"
+            print("Failed to Send Email!")
     elif e:
         sub = "Words: Random"
         count=0
@@ -52,7 +52,7 @@ def printStuff(p,cede,toaddr,f,w,e,deck,words,c,numWords):
         while email(output,toaddr,sub) and count < max_count:
             count=count+1
         if count==max_count:
-            print "Failed to Send Email!"
+            print("Failed to Send Email!")
 
     print("\n\n\n\n\t\t\t\t\t\t\t\tAll Done(" + str(p) + "/" + str(p) +")!\n\n\n\n")
     
