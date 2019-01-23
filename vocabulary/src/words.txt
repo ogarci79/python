@@ -1,50 +1,50 @@
-Implacable (adj) - unable to be calmed down or made peaceful
-Liberal (adj) - tolerant or broad-minded; generous or lavish
-Gregarious (adj) - outgoing; sociable
-Specious (adj) - deceptively attractive; seemingly plausible but fallacious
-Crapulous (adj) - marked by intemperance especially in eating or drinking
-Tangential (adj) - digressing; diverting
-Winsome (adj) - charming; happily engaging
-Dissonance (noun) - lack of agreement; especially: inconsistency between the beliefs one holds or between one's actions and one's beliefs
+Deference (noun) - respect; courtesy
+Ambivalent (adj) - having mixed feelings or contradictory ideas about something or someone
+Burgeon (verb) - to grow and flourish
+Exponent (noun) - one who champions or advocates
+Inculcate (verb) - to teach; impress in the mind
+Contumacious (adj) - rebellious
+Deluge (verb) - inundate with a great quantity of something
+Pathogenic (adj) - causing disease
+Genesis (noun) - the origin or coming into being of something
+Attenuate (verb) - to reduce in force or degree; weaken
+Tirade (noun) - long, harsh speech or verbal attack
+Promulgate (verb) - to make (an idea, belief, etc.) known to many people by open declaration; proclaim
+Impartial (ad) - treating all rivals or disputants equally;  fair and just
+Desiccate (verb) - to dry out thoroughly
+Syllogism (noun) - a deductive scheme of a formal argument consisting of a major and a minor premise and a conclusion (as in "every virtue is laudable; kindness is a virtue; therefor kindness is laudable")
+Abject (adj) - (of something bad) experienced or present to the maximum degree; (of a person or their behavior) completely without pride or dignity; self-abasing
+Volatile (adj) - easily aroused or changeable; lively or explosive
+Invidious (adj) - envious, obnoxious, or offensive; likely to premote ill-will
+Confer (verb) - grant or bestow (a title, degree, benefit, or right); give
+Sardonic (adj) - cynical; scornfully mocking
+Eloquent (adj) - persuasive and moving, especially in speech
+Abyss (noun) - an extremely deep hole
+Dither (verb) - to act confusedly or without clear pupose
+Anecdotal (adj) - (of an account) not necessarily true or reliable, because based on personal accounts rather than facts or research
+Pedant (noun) - a person who is excessively concerned with minor details and rules or with displaying academic learning
+Boor (noun) - crude person, one lacking manners or taste
+Maudlin (adj) - overly sentimental, often through drunkenness
+Ambiguous (adj) - doubtful or uncertain; can be interpreted several ways
+Pungent (adj) - sharp and irritating to the sense
+Tacit (adj) - done without using words
+Effrontery (noun) - impudent boldness; audacity
+Audacious (adj) - fearless and daring 
+Parley (noun) - discussion, usually between enemies
+Turgid (adj) - swollen as from a fluid; bloated
+Kudos (noun) - fame, glory, or honor
+Mnemonic (adj) - Assisting or intended to assit memory
+Sycophant (noun) - a self-serving flatterer; yes-man
+Bolster (verb) - to support; prop up
+Fanatical (adj) - acting excessivley enthusiastic; filled with extreme, unquestioned devotion
+Spurious (adj) - not being what it purports to be; false or fake; (of a line of reasoning) apparently but not actually valid
+Curmudgeon (noun) - cranky person, usually old
+Decorum (noun) - appropriateness of behavior or conduct; prepriety
+Vestige (noun) - a trace; remnant
+Untenable (adj) - (especially of a position or view) not able to be maintained or defended against attack or objection
+Paradox (noun) - a contradiction or dilemma; a statement or proposition that, despite sound (or apparently sound) reasoning from acceptable premises, leads to a conclusion that seems senseless, logically unacceptable, or self-contradictory
+Cede (verb) - give up (power or territory)
+Prodigal (adj) - lavish; wasteful
+Compendious (adj) - marked by brief expression of a comprehensive matter; concise and comprehensive
+Adulterate (verb) - to make impure
 Equanimity (noun) - mental calmness, composure, and evenness of temper, especially in a difficult situation.
-Onerous (adj) - troublesome and oppressive; burdensome
-Opacity (noun) - the condition of lacking transparency or translucence; opaqueness
-Gratuitous (adj) - not called for by the circumstances: not necessary, appropriate, or justified
-Exigent (adj) - urgent; requiring immediate action
-Plethora (noun) - excess
-Ingrate (noun) - ungrateful person
-Mirth (noun) - amusement, especially as expressed in laughter
-Belligerent (adj) - inclined to or exhibiting assertiveness, hostility, or combativeness
-Proximal  (adj) - situated close to; proximate; next to or nearest the point of attachment or origin, a central point, or the point of view
-Ignoble (adj) - having low moral standards; not noble in character; mean
-Discourse (noun) - written or spoken communication or debate
-Magnate (noun) - powerful or influential person
-Stasis (noun) - a state of static balance or equilibrium; stagnation
-Vocation (noun) - a strong feeling of suitability for a particular career or occupation; a trade or profession
-Foment (verb) - to arouse or incite
-Tenuous (ad) - very weak or slight
-Soporific (adj) - causing sleep or lethargy
-Iniquity (noun) - sin; evil act; immoral or grossly unfair behavior
-Insurrection (noun) - rebellion
-Antagonize (verb) - to annoy or provoke to anger
-Plucky (adj) - courageous; spunky
-Meretricious (adj) - gaudy; falsely attractive; apparently attractive but having in reality no value or integrity
-Preclude (verb) - prevent from happening; make impossible; rule out in advance
-Paragon (noun) - model of excellence or perfection
-Propriety (noun) - the quality of behaving in a proper manner; obeying rules and customs
-Monotony (noun) - no variation; tediously the same
-Castigate (verb) - to punish or criticize harshly
-Stigma (noun) - a mark of shame or discredit
-Judicious (adj) - sensible; showing good judgement
-Oblique (adj) - indirect or evasive; misleading or devious
-Symbiosis (noun) - cooperation; mutual helpfulness
-Overwrought (adj) - agitated; overdone; in a state of nervous excitement or anxiety; (of a piece of writing or a work of art) too elaborate or complicated in design or construction
-Inference (noun) - a conclusion reached on teh basis of evidence and reasoning
-Assail (verb) - to attack; assualt
-Foreshorten (verb) - prematurley or dramatically shortened or reduced (something) in time or scale
-Garner (verb) - to gather and store
-Canonical (adj) - conforming to a genral rule or acceptable procedure; orthodox
-Tome (noun) - book, usually large and academic
-Corroborate (verb) - to support with evidence
-Platonic (adj) - (of love or friendship) intimate and affectionate but not sexual; of, relating to, or characteristic of Plato or Platonism
-Rarefy (verb) - to make thinner or sparser
