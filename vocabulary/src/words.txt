@@ -1,50 +1,10 @@
-Deference (noun) - respect; courtesy
-Ambivalent (adj) - having mixed feelings or contradictory ideas about something or someone
-Burgeon (verb) - to grow and flourish
-Exponent (noun) - one who champions or advocates
-Inculcate (verb) - to teach; impress in the mind
-Contumacious (adj) - rebellious
-Deluge (verb) - inundate with a great quantity of something
-Pathogenic (adj) - causing disease
-Genesis (noun) - the origin or coming into being of something
-Attenuate (verb) - to reduce in force or degree; weaken
-Tirade (noun) - long, harsh speech or verbal attack
-Promulgate (verb) - to make (an idea, belief, etc.) known to many people by open declaration; proclaim
-Impartial (ad) - treating all rivals or disputants equally;  fair and just
-Desiccate (verb) - to dry out thoroughly
-Syllogism (noun) - a deductive scheme of a formal argument consisting of a major and a minor premise and a conclusion (as in "every virtue is laudable; kindness is a virtue; therefor kindness is laudable")
-Abject (adj) - (of something bad) experienced or present to the maximum degree; (of a person or their behavior) completely without pride or dignity; self-abasing
-Volatile (adj) - easily aroused or changeable; lively or explosive
+Ostentatious (adj) - characterized by vulgar or pretentious display; designed to impress or attract notice
+Salient (adj) - prominent; of notable significance
+Empirical (adj) - originating in or based on observation or experience
+Unfetter (verb) - release from restraint or inhibition
+Peripatetic (adj) - wandering from place to place, especially on foot
+Semblance (noun) - outward and often specious appearance or show
 Invidious (adj) - envious, obnoxious, or offensive; likely to premote ill-will
-Confer (verb) - grant or bestow (a title, degree, benefit, or right); give
-Sardonic (adj) - cynical; scornfully mocking
-Eloquent (adj) - persuasive and moving, especially in speech
-Abyss (noun) - an extremely deep hole
-Dither (verb) - to act confusedly or without clear pupose
-Anecdotal (adj) - (of an account) not necessarily true or reliable, because based on personal accounts rather than facts or research
-Pedant (noun) - a person who is excessively concerned with minor details and rules or with displaying academic learning
-Boor (noun) - crude person, one lacking manners or taste
-Maudlin (adj) - overly sentimental, often through drunkenness
-Ambiguous (adj) - doubtful or uncertain; can be interpreted several ways
-Pungent (adj) - sharp and irritating to the sense
-Tacit (adj) - done without using words
-Effrontery (noun) - impudent boldness; audacity
-Audacious (adj) - fearless and daring 
-Parley (noun) - discussion, usually between enemies
-Turgid (adj) - swollen as from a fluid; bloated
-Kudos (noun) - fame, glory, or honor
-Mnemonic (adj) - Assisting or intended to assit memory
-Sycophant (noun) - a self-serving flatterer; yes-man
-Bolster (verb) - to support; prop up
-Fanatical (adj) - acting excessivley enthusiastic; filled with extreme, unquestioned devotion
-Spurious (adj) - not being what it purports to be; false or fake; (of a line of reasoning) apparently but not actually valid
-Curmudgeon (noun) - cranky person, usually old
-Decorum (noun) - appropriateness of behavior or conduct; prepriety
-Vestige (noun) - a trace; remnant
-Untenable (adj) - (especially of a position or view) not able to be maintained or defended against attack or objection
-Paradox (noun) - a contradiction or dilemma; a statement or proposition that, despite sound (or apparently sound) reasoning from acceptable premises, leads to a conclusion that seems senseless, logically unacceptable, or self-contradictory
-Cede (verb) - give up (power or territory)
-Prodigal (adj) - lavish; wasteful
-Compendious (adj) - marked by brief expression of a comprehensive matter; concise and comprehensive
-Adulterate (verb) - to make impure
-Equanimity (noun) - mental calmness, composure, and evenness of temper, especially in a difficult situation.
+Exacerbate (verb) - to make worse
+Euphony (noun) - pleasant, harmonious sound
+Belligerent (adj) - inclined to or exhibiting assertiveness, hostility, or combativeness

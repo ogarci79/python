@@ -143,7 +143,7 @@ def main():
     words=[]
     words=readFile(words)
     [p,f,w,e,s,c]=parse()
-    numWords=50
+    numWords=10
     cede=int(datetime.date.today().strftime("%U"))+1
 
     if f:
