@@ -1,10 +1,10 @@
-Acquisitive (adj) - excessively interested in acquiring money or material things
-Utilitarian (adj) - designed to be useful or practical rather than attractive
-Intractable (adj) - not easily managed or manipulated
-Zealot (noun) - a person who is fanatical and uncompromising in pursuit of their religious, political, or other ideals
-Filiation (noun) - descent or derivation especially from a culture or language; filial relationship especially of a son to his father
-Pithy (adj) - profound or substantial yet concise, succinct, and to the point
-Notional (adj) - existing only in theory or as a suggestion or idea
-Waver (verb) - to fluctuate between choices
-Itinerant (adj) - wandering from place to place; unsettled
-Pernicious (adj) - having a harmful effect, especially in a gradual or subtle way; deadly
+Volatile (adj) - easily aroused or changeable; lively or explosive
+Intransigent (adj) - uncompromising; unwilling or refusing to change one's views or to agree about something
+Peripatetic (adj) - wandering from place to place, especially on foot
+Homoscedasticity (adj) - a property of a set of random variables where each variable has the same finite variance
+Affluent (adj) - (especially of a group or area) having a great deal of money; wealthy
+Metaphor (noun) - figure of speech comparing two different things
+Belligerent (adj) - inclined to or exhibiting assertiveness, hostility, or combativeness
+Discourse (noun) - written or spoken communication or debate
+Corroborate (verb) - to support with evidence
+Symbiosis (noun) - cooperation; mutual helpfulness
