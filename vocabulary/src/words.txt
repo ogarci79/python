@@ -1,10 +1,10 @@
-Volatile (adj) - easily aroused or changeable; lively or explosive
-Intransigent (adj) - uncompromising; unwilling or refusing to change one's views or to agree about something
-Peripatetic (adj) - wandering from place to place, especially on foot
-Homoscedasticity (adj) - a property of a set of random variables where each variable has the same finite variance
-Affluent (adj) - (especially of a group or area) having a great deal of money; wealthy
-Metaphor (noun) - figure of speech comparing two different things
-Belligerent (adj) - inclined to or exhibiting assertiveness, hostility, or combativeness
-Discourse (noun) - written or spoken communication or debate
-Corroborate (verb) - to support with evidence
-Symbiosis (noun) - cooperation; mutual helpfulness
+Audacious (adj) - fearless and daring 
+Frenetic (adj) - frantic; frenzied
+Ingratiate (verb) - to gain favor with another by deliberate effort; to seek to please somebody so as to gain an advantage
+Levity (noun) - an inappropriate lack of seriousness; overly casual
+Due (noun) - A person's right; what is owed to someone; an obligatory payment; a fee
+Iniquity (noun) - sin; evil act; immoral or grossly unfair behavior
+Axiom (noun) - premise; postulate; self-evident truth
+Terrestrial (adj) - earthly; down-to-earth; commonplace
+Temporality (noun) - the state of existing within or having some relationship with time
+Marginal (adj) - of secondary or minor importance; not central
