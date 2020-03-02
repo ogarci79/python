@@ -1,10 +1,10 @@
-Allay (verb) - diminish or put at rest (fear, suspicion, or worry); relieve or alleviate (pain or hunger)
-Legion (adj) - a very large number; a large military force
-Incongruous (adj) - not in harmony or keeping with the surroundings or other aspects of something
-Archaic (adj) - ancient; old-fashioned
-Diurnal (adj) - existing during the day; daily; of each day
-Exacerbate (verb) - to make worse
-Imperturbable (adj) - not capable of being disturbed
-Lumber (verb) - to move slowly and awkwardly
-Nascent (adj) - starting to develop; coming into existence
-Meticulous (adj) - extremely careful; fastidious; painstaking
+Catalyst (noun) - something that brings about a change in something else
+Candid (adj) - impartial and honest in speech
+Dispossess (verb) - deprive (someone) of land, property, or other possessions
+Pathogenic (adj) - causing disease
+Arbitrary (adj) - determined by chance or impulse
+Luminous (adj) - bright; brilliant; glowing
+Permeate (verb) - to penetrate
+Mnemonic (adj) - Assisting or intended to assit memory
+Dissemble (verb) - to present a false appearance; to disguise one's real intentions or character
+Taxonomy (noun) - the branch of science concerned with classification, especially of organisms; systematics
