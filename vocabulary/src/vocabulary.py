@@ -146,6 +146,9 @@ def main():
     numWords=10
     cede=int(datetime.date.today().strftime("%U"))+1
 
+    #print(words)
+    #return
+
     if f:
         words=words[pd.notnull(words['Favor'])]
         words.index=range(len(words.index))
