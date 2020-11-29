@@ -26,13 +26,13 @@ def T(r,m,c):
     return c*H(r,m)
 
 def solvePayment(r,m,c,f):
-    print 'Payment: ${0:1.2f}'.format((f-I(r,m,c)-J(r,m,c))/K(r,m))
+    print ('Payment: ${0:1.2f}' % (f-I(r,m,c)-J(r,m,c))/K(r,m))
 
 def solveFuture(p,r,m,c):
-    print 'Future Value: ${0:1.2f}'.format(I(r,m,c)+J(r,m,c)+p*K(r,m))
+    print ('Future Value: ${0:1.2f}' % I(r,m,c)+J(r,m,c)+p*K(r,m))
 
 def solveCurrent(p,r,m,f):
-    print 'Current Value: ${0:1.2f}'.format((f-p*K(r,m))/H(r,m))
+    print ('Current Value: ${0:1.2f}' % (f-p*K(r,m))/H(r,m))
 
 def func1(x,p,r,f,c):
     return c*np.power(r+1,x) + p*(np.power(r+1,x)-1)/r - f
@@ -41,13 +41,14 @@ def func2(x,p,m,f,c):
     return c*np.power(x+1,m) + p*(np.power(x+1,m)-1)/x - f
 
 def solveMonths(p,r,f,c):
-    print 'Months: {0:1.2f}'.format(optimize.newton(func1,10,fprime=None,args=(p,r,f,c)))
+    print ("Hi")
+    print ('Months: %1.2f' % optimize.newton(func1,10,fprime=None,args=(p,r,f,c)))
 
 def solveRate(p,m,f,c):
-    print 'Rate: {0:1.4f}'.format(12*optimize.newton(func2,0.01,fprime=None,args=(p,m,f,c)))
+    print ('Rate: {0:1.4f}' % 12*optimize.newton(func2,0.01,fprime=None,args=(p,m,f,c)))
 
 def amortization(p,r,f,c):
-    file=open('amortization.txt',"wp")
+    file=open('amortization.txt',"w")
     file.write("Month,Beginning Balance,Payment,Principle,Interest,End Balance\n")
 
     n=1
@@ -90,7 +91,7 @@ def main():
     f=args['futureValue']
 
     if (len(sys.argv) < 9): 
-        print "Insufficient Number of Arguments. Need four of (p-payment,r-rate,m-months,e-not_used,c-currentValue,f-futureValue)"
+        print ("Insufficient Number of Arguments. Need four of (p-payment,r-rate,m-months,e-not_used,c-currentValue,f-futureValue)")
         exit(-1)
 
     if p is None:

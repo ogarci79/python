@@ -13,3 +13,4 @@ if [ -d $new_dir ];then
 fi
 cp -r zero $new_dir
 mv $new_dir/src/zero.py $new_dir/src/"$new_dir".py
+mv $new_dir/src/zero.ipynb $new_dir/src/"$new_dir".ipynb
