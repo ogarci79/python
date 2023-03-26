@@ -62,8 +62,10 @@ def compare(output,e,toaddr,sub,c,numWords,p):
 
     maxLoop=10000
     count=0
-    if not c and output != open('/home/ofgarci/code/python/vocabulary/src/words.txt','a+').read() and p==numWords:
-        outfile=open('/home/ofgarci/code/python/vocabulary/src/words.txt',"w")
+    #if not c and output != open('/home/ofgarci/code/python/vocabulary/src/words.txt','a+').read() and p==numWords:
+    if not c and output != open('/home/garcia/python/vocabulary/src/words.txt','a+').read() and p==numWords:
+        #outfile=open('/home/ofgarci/code/python/vocabulary/src/words.txt',"w")
+        outfile=open('/home/garcia/python/vocabulary/src/words.txt',"w")
         outfile.write(output)
         outfile.close()
         while email(output,toaddr,sub) and count < maxLoop:
@@ -116,7 +118,9 @@ def email(output,toaddr,sub):
 
 def readFile(words):
 
-    words=pd.read_csv('/home/ofgarci/code/python/vocabulary/src/words.csv')
+    #print(os.getcwd())
+    #words=pd.read_csv('/home/ofgarci/code/python/vocabulary/src/words.csv')
+    words=pd.read_csv('/home/garcia/python/vocabulary/src/words.csv')
     return words
 
 
