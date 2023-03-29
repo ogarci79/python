@@ -35,6 +35,10 @@ def word(word_index):
 
     return render_template('word.html', word=current_word, word_index=word_index, word_count=session['num_words'])
 
+@app.route('/static/css/main.css')
+def static_file():
+    return app.send_static_file('css/main.css')
+
 if __name__ == '__main__':
     app.run(debug=True)
 
