@@ -1,15 +1,25 @@
 <!doctype html>
-<html>
-    <head>
-        <title>Random Words</title>
-    </head>
-    <body>
-        <h1>Random Words</h1>
-        <form method="post">
-            <label for="num_words">Number of words:</label>
-            <input type="number" name="num_words" id="num_words" min="1" required>
-            <input type="submit" value="Generate">
-        </form>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Vocabulary</title>
+</head>
+<body>
+    <h1>Vocabulary</h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    <form method="POST">
+        <label for="num_words">How many words?</label>
+        <input type="text" name="num_words" id="num_words" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
 </html>
 

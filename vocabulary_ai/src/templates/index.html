@@ -1,34 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <title>Vocabulary AI</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <div id="word"></div>
-    <button id="next">Next</button>
-    <script>
-      $(document).ready(function() {
-        var current_index = -1;
-        $("#next").click(function() {
-          $.ajax({
-            type: "POST",
-            url: "/next",
-            data: {current_index: current_index},
-            success: function(response) {
-              current_index++;
-              $("#word").html(response.Word);
-              $("#word").append("<br>Type: " + response.Type);
-              $("#word").append("<br>Pronunciation: " + response.Pronunciation);
-              $("#word").append("<br>Definition: " + response.Definition);
-              $("#word").append("<br>Sentence: " + response.Sentence);
-              $("#word").append("<br>Synonyms: " + response.Synonyms);
-              $("#word").append("<br>");
-            }
-          });
-        });
-      });
-    </script>
-  </body>
+    <head>
+        <title>Random Words</title>
+    </head>
+    <body>
+        <h1>Random Words</h1>
+        <form method="post">
+            <label for="num_words">Number of words:</label>
+            <input type="number" name="num_words" id="num_words" min="1" required>
+            <input type="submit" value="Generate">
+        </form>
+    </body>
 </html>
 

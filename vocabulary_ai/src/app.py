@@ -1,25 +1,23 @@
-from flask import Flask, render_template, request
 import csv
 import random
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route('/')
-def home():
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    if request.method == 'POST':
+        try:
+            num_words = int(request.form['num_words'])
+            if num_words > 0:
+                with open('words.csv', newline='') as csvfile:
+                    reader = csv.DictReader(csvfile)
+                    words = random.sample(list(reader), num_words)
+                    return render_template('display.html', words=words)
+        except ValueError:
+            pass
     return render_template('index.html')
 
-@app.route('/next', methods=['POST'])
-def next_word():
-    current_index = int(request.form['current_index'])
-    word_list = []
-    with open('words.csv') as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            word_list.append(row)
-    next_word_index = (current_index + 1) % len(word_list)
-    next_word = word_list[next_word_index]
-    return next_word
-
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
 

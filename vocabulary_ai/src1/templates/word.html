@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Words - Word {{ word_index + 1 }}</title>
+    <script>
+        function toggleDetails() {
+            const wordDetails = document.getElementById("word-details");
+            const nextButton = document.getElementById("next-button");
+
+            if (wordDetails.style.display === "none") {
+                wordDetails.style.display = "block";
+                nextButton.innerText = "Next Word";
+            } else {
+                document.getElementById("next-form").submit();
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>{{ word.Word }} ({{ word.Type }})</h1>
+    <div id="word-details" style="display:none;">
+        <p>Pronunciation: {{ word.Pronunciation }}</p>
+        <p>Definition: {{ word.Definition }}</p>
+        <p>Sentence: {{ word.Sentence }}</p>
+        <p>Synonyms: {{ word.Synonyms }}</p>
+    </div>
+    <form id="next-form" method="POST" style="display:inline;"></form>
+    <button id="next-button" onclick="toggleDetails()">Next</button>
+</body>
+</html>
+
