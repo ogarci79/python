@@ -26,14 +26,14 @@ def index():
 def word(word_index):
     if word_index >= session['num_words']:
         return redirect(url_for('index'))
-    
+
     words = random.sample(read_csv(), session['num_words'])
     current_word = words[word_index]
 
     if request.method == 'POST':
         return redirect(url_for('word', word_index=word_index + 1))
 
-    return render_template('word.html', word=current_word, word_index=word_index)
+    return render_template('word.html', word=current_word, word_index=word_index, word_count=session['num_words'])
 
 if __name__ == '__main__':
     app.run(debug=True)

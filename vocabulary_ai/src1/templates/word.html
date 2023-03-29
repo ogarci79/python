@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Words - Word {{ word_index + 1 }}</title>
+    <title>Vocabulary - Vocabulary {{ word_index + 1 }}</title>
     <script>
         function toggleDetails() {
             const wordDetails = document.getElementById("word-details");
@@ -15,15 +15,22 @@
                 document.getElementById("next-form").submit();
             }
         }
+
+        function handleKeyPress(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                toggleDetails();
+            }
+        }
     </script>
 </head>
-<body>
-    <h1>{{ word.Word }} ({{ word.Type }})</h1>
+<body onkeypress="handleKeyPress(event)">
+    <h1><span style="font-size: 16px">({{word_index}}/{{word_count}})</span> {{ word.Word }} ({{ word.Type }}) </h1>
     <div id="word-details" style="display:none;">
         <p>Pronunciation: {{ word.Pronunciation }}</p>
         <p>Definition: {{ word.Definition }}</p>
-        <p>Sentence: {{ word.Sentence }}</p>
         <p>Synonyms: {{ word.Synonyms }}</p>
+        <p>Sentence: {{ word.Sentence }}</p>
     </div>
     <form id="next-form" method="POST" style="display:inline;"></form>
     <button id="next-button" onclick="toggleDetails()">Next</button>
