@@ -13,7 +13,7 @@ def main():
     # Ignore insecure request warnings
     warnings.simplefilter('ignore', InsecureRequestWarning)
 
-    source = "/mnt/c/Users/ogarc/OneDrive/Desktop/Schedule_090918 - Definitions.csv"
+    source = "/mnt/c/Users/ogarc/Downloads//Schedule_090918 - Definitions.csv"
     destination = "words.csv"
 
     # Check if the source file exists
